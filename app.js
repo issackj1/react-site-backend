@@ -17,4 +17,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+app.get('/api/v1/test', function (req, res) {
+    res.send('This is a test')
+});
+
 module.exports = app;
