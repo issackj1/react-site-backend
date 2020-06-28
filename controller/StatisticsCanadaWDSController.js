@@ -30,7 +30,22 @@ module.exports.getCubeMetaData = (req, res, next) => {
         );
 };
 
-module.exports.getDataFromVectorsAndLatestNPeriods = (req, res, next) => {};
-module.exports.getDataFromCubePidCoordAndLatestNPeriods = (req, res, next) => {};
-module.exports.getChangedSeriesDataFromVector = (req, res, next) => {};
+module.exports.getDataFromVectorsAndLatestNPeriods = (req, res, next) => {
+    res
+        .status(200)
+        .send("getDataFromVectorsAndLatestNPeriods")
+
+};
+
+module.exports.getDataFromCubePidCoordAndLatestNPeriods = (req, res, next) => {
+    res
+        .status(200)
+        .send("getDataFromCubePidCoordAndLatestNPeriods")
+};
+
+module.exports.getChangedSeriesDataFromVector = (req, res, next) => {
+    res
+        .status(200)
+        .send("getDataFromVectorsAndLatestNPeriods")
+};
 
