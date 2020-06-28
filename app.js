@@ -58,7 +58,7 @@ app.get('/api/v1/getCubeMetaData/:id', function (req, res) {
             (result) => {
                 res
                     .status(result.status)
-                    .send(result.data[0]);
+                    .send(result.data);
             },
             (error) => {
                 res
