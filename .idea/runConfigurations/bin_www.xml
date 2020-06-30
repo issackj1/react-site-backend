@@ -3,6 +3,7 @@
     <envs>
       <env name="DEBUG" value="alpha-backend:*" />
       <env name="user_key" value="a88eac5164f5a3719a588151e6f2c3a5" />
+      <env name="PORT" value="4000" />
     </envs>
     <EXTENSION ID="com.jetbrains.nodejs.run.NodeJSStartBrowserRunConfigurationExtension">
       <browser url="http://localhost:4000/" />
