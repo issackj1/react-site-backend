@@ -48,13 +48,13 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: task-definition.json
-          container-name: alpha-container
+          container-name: alpha-backend-container
           image: ${{ steps.build-image.outputs.image }}
 
       - name: Deploy Amazon ECS task definition
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
-          service: react-site-service
+          service: react-site-backend
           cluster: react-site-cluster-1
           wait-for-service-stability: true

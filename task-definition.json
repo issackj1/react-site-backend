@@ -46,7 +46,7 @@
             "dockerLabels": null,
             "systemControls": null,
             "privileged": null,
-            "name": "alpha-container"
+            "name": "alpha-backend-container"
         }
     ],
     "placementConstraints": [],
