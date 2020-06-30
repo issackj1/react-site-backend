@@ -6,10 +6,9 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 COPY package-lock.json ./
 
-RUN npm ci --silent
+RUN npm ci --silent --only=production
 RUN npm install
 COPY . ./
-RUN npm run build
 
 EXPOSE 4000
 CMD ["node", "server.js"]
