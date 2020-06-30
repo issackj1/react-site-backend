@@ -55,7 +55,7 @@
     "compatibilities": [
         "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:815726450779:task-definition/alpha:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:815726450779:task-definition/alpha-backend:1",
     "family": "alpha-backend",
     "requiresAttributes": [
         {
