@@ -7,12 +7,10 @@
         {
           "Effect": "Allow",
           "Action": [
-            "secretsmanager:GetSecretValue",
-            "kms:Decrypt"
+            "secretsmanager:GetSecretValue"
           ],
           "Resource": [
-            "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5",
-            "arn:aws:kms:us-east-1:815726450779:secret:user_key-uVOMX5"
+            "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5"
           ]
         }
       ],
