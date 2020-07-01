@@ -1,108 +1,109 @@
 {
-    "ipcMode": null,
-    "executionRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
-    "containerDefinitions": [
+  "ipcMode": null,
+  "executionRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "Statement": [
         {
-            "dnsSearchDomains": null,
-            "environmentFiles": null,
-            "logConfiguration": null,
-            "entryPoint": null,
-            "portMappings": [
-                {
-                    "hostPort": 4000,
-                    "protocol": "tcp",
-                    "containerPort": 4000
-                }
-            ],
-            "command": null,
-            "linuxParameters": null,
-            "cpu": 128,
-            "environment": [],
-            "resourceRequirements": null,
-            "ulimits": null,
-            "dnsServers": null,
-            "mountPoints": [],
-            "workingDirectory": null,
-            "Statement": [
-                {
-                    "Action": [
-                        "secretsmanager:DescribeSecret",
-                        "secretsmanager:GetSecretValue",
-                        "secretsmanager:PutSecretValue",
-                        "secretsmanager:UpdateSecretVersionStage"
-                    ],
-                    "Resource": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5",
-                    "Effect": "Allow"
-                }
-            ],
-            "secrets": [
-                {
-                    "name": "user_key",
-                    "valueFrom": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5"
-                }
-            ],
-            "dockerSecurityOptions": null,
-            "memory": 128,
-            "memoryReservation": null,
-            "volumesFrom": [],
-            "stopTimeout": null,
-            "image": "815726450779.dkr.ecr.us-east-1.amazonaws.com/react-site-backend:latest",
-            "startTimeout": null,
-            "firelensConfiguration": null,
-            "dependsOn": null,
-            "disableNetworking": null,
-            "interactive": null,
-            "healthCheck": null,
-            "essential": true,
-            "links": null,
-            "hostname": null,
-            "extraHosts": null,
-            "pseudoTerminal": null,
-            "user": null,
-            "readonlyRootFilesystem": null,
-            "dockerLabels": null,
-            "systemControls": null,
-            "privileged": null,
-            "name": "alpha-backend-container"
+          "Effect": "Allow",
+          "Action": [
+            "secretsmanager:GetSecretValue",
+            "kms:Decrypt"
+          ],
+          "Resource": [
+            "arn:aws:secretsmanager:<region>:<aws_account_id>:secret:<secret_name>",
+            "arn:aws:kms:<region>:<aws_account_id>:key/<key_id>"
+          ]
         }
-    ],
-    "placementConstraints": [],
-    "memory": "256",
-    "taskRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
-    "compatibilities": [
-        "EC2"
-    ],
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:815726450779:task-definition/alpha-backend:1",
-    "family": "alpha-backend",
-    "requiresAttributes": [
+      ],
+      "dnsSearchDomains": null,
+      "environmentFiles": null,
+      "logConfiguration": null,
+      "entryPoint": null,
+      "portMappings": [
         {
-            "targetId": null,
-            "targetType": null,
-            "value": null,
-            "name": "com.amazonaws.ecs.capability.ecr-auth"
-        },
-        {
-            "targetId": null,
-            "targetType": null,
-            "value": null,
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
-            "targetId": null,
-            "targetType": null,
-            "value": null,
-            "name": "ecs.capability.execution-role-ecr-pull"
+          "hostPort": 4000,
+          "protocol": "tcp",
+          "containerPort": 4000
         }
-    ],
-    "pidMode": null,
-    "requiresCompatibilities": [
-        "EC2"
-    ],
-    "networkMode": null,
-    "cpu": "",
-    "revision": 1,
-    "status": "ACTIVE",
-    "inferenceAccelerators": null,
-    "proxyConfiguration": null,
-    "volumes": []
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 128,
+      "environment": [],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": [
+        {
+          "name": "user_key",
+          "valueFrom": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5"
+        }
+      ],
+      "dockerSecurityOptions": null,
+      "memory": 128,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "815726450779.dkr.ecr.us-east-1.amazonaws.com/react-site-backend:latest",
+      "startTimeout": null,
+      "firelensConfiguration": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "alpha-backend-container"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": "256",
+  "taskRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
+  "compatibilities": [
+    "EC2"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:815726450779:task-definition/alpha-backend:1",
+  "family": "alpha-backend",
+  "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
+    },
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "ecs.capability.execution-role-ecr-pull"
+    }
+  ],
+  "pidMode": null,
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": null,
+  "cpu": "",
+  "revision": 1,
+  "status": "ACTIVE",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
 }
