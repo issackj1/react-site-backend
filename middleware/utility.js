@@ -11,7 +11,7 @@ public_dir = path.getPublicDirectory();
 log_path = path.getRootDirectory() + _path.sep + 'access.log';
 
 module.exports.session = express_session({
-    secret: "87B9AE7C11C6C949B51899916F3BB",
+    secret: process.env.EXPRESS_SESSION_SECRET,
     resave: true,
     saveUninitialized: false,
     expires: new Date(Date.now() + (30 * 86400 * 1000)),

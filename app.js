@@ -3,6 +3,9 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const dotenv = require('dotenv');
+dotenv.config();
+
 
 const utility_mw = require('./middleware/utility');
 const errors_mw = require('./middleware/errors');
@@ -21,6 +24,7 @@ const corsOptions = {
 };
 
 const app = express();
+
 
 app.use(cors(corsOptions));
 app.use(logger('dev'));

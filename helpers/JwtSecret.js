@@ -1,1 +1,1 @@
-module.exports.JWT_SECRET = 'D088A9896385FB2397F39C4D2A20BB6C';
+module.exports.JWT_SECRET = process.env.JWT_SECRET;

@@ -1,7 +1,7 @@
-const PROTOCOL = "mongodb+srv://";
-const DB_USER = "issackj";
-const DB_NAME = "react-site";
-const USER_PWD = "JoWPK0uLKqDoUNZ4";
-const CLUSTER = "@cluster0.omosm.mongodb.net/";
+const PROTOCOL = process.env.PROTOCOL;
+const DB_USER = process.env.DB_USER;
+const DB_NAME = process.env.DB_NAME;
+const USER_PWD = process.env.USER_PWD;
+const CLUSTER = process.env.CLUSTER;
 
 module.exports.DB_URI = PROTOCOL + DB_USER + ":" + USER_PWD + CLUSTER + DB_NAME;
