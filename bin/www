@@ -3,10 +3,11 @@
 /**
  * Module dependencies.
  */
-
-var app = require('../app');
-var debug = require('debug')('alpha-backend:server');
-var http = require('http');
+const app = require('../app');
+const debug = require('debug')('alpha-backend:server');
+const http = require('http');
+const mongoose = require('mongoose');
+const database = require("../utils/database");
 
 /**
  * Get port from environment and store in Express.
@@ -14,6 +15,20 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || '4000');
 app.set('port', port);
+
+/**
+ * Connect to MongoDb
+ */
+mongoose.connect(database.DB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+}).then(function (result) {
+  console.log("Connected to MongoDB server.");
+}).catch(function (err) {
+  console.log(err);
+});
+
 
 /**
  * Create HTTP server.
