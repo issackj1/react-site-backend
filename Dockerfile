@@ -10,5 +10,5 @@ RUN npm ci --silent --only=production
 RUN npm install
 COPY . ./
 
-EXPOSE 80
+EXPOSE 4000
 CMD ["node", "./bin/www"]

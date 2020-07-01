@@ -8,7 +8,7 @@ const usersRouter = require('./routes/users');
 const StatisticsCanadaWDSRouter  = require('./routes/StatisticsCanadaWDS');
 
 const cors = require('cors');
-const whitelist = ['http://3.236.137.142/'];
+const whitelist = ['http://3.236.137.142/', 'http://localhost:4000'];
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin || whitelist.indexOf(origin) !== -1) {
