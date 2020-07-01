@@ -5,7 +5,7 @@ const auth = require('../controller/auth');
 
 const router = express.Router();
 
-router.get('/api/login', passport.authenticate('jwt', { session: false }, auth.login));
+router.post('/api/login', passport.authenticate('local', { session: false }), auth.login);
 
 router.post('/api/register', auth.register);
 
