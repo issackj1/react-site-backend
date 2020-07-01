@@ -23,7 +23,12 @@
             "dnsServers": null,
             "mountPoints": [],
             "workingDirectory": null,
-            "secrets": null,
+            "secrets": [
+                {
+                    "name": "user_key",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5"
+                }
+            ],
             "dockerSecurityOptions": null,
             "memory": 128,
             "memoryReservation": null,
