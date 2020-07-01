@@ -11,8 +11,8 @@
             "kms:Decrypt"
           ],
           "Resource": [
-            "arn:aws:secretsmanager:<region>:<aws_account_id>:secret:<secret_name>",
-            "arn:aws:kms:<region>:<aws_account_id>:key/<key_id>"
+            "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5",
+            "arn:aws:kms:us-east-1:815726450779:secret:user_key-uVOMX5"
           ]
         }
       ],
