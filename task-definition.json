@@ -23,14 +23,18 @@
             "dnsServers": null,
             "mountPoints": [],
             "workingDirectory": null,
-            "Action": [
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:PutSecretValue",
-                "secretsmanager:UpdateSecretVersionStage"
+            "Statement": [
+                {
+                    "Action": [
+                        "secretsmanager:DescribeSecret",
+                        "secretsmanager:GetSecretValue",
+                        "secretsmanager:PutSecretValue",
+                        "secretsmanager:UpdateSecretVersionStage"
+                    ],
+                    "Resource": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5",
+                    "Effect": "Allow"
+                }
             ],
-            "Resource": "arn:aws:secretsmanager:us-east-1:815726450779:secret:user_key-uVOMX5",
-            "Effect": "Allow",
             "secrets": [
                 {
                     "name": "user_key",
