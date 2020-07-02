@@ -50,4 +50,5 @@ module.exports.register = (req, res, next) => {
 
 module.exports.confirmToken = (req, res, next) => {
     const token = req.body.token || req.params.token;
+    res.status(200).json({status: "Authenticated"});
 };

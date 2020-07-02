@@ -6,7 +6,6 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 dotenv.config();
 
-
 const utility_mw = require('./middleware/utility');
 const errors_mw = require('./middleware/errors');
 const auth_mw = require('./middleware/authentication');
@@ -24,7 +23,6 @@ const corsOptions = {
 };
 
 const app = express();
-
 
 app.use(cors(corsOptions));
 app.use(logger('dev'));
