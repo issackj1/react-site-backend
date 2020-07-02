@@ -23,7 +23,7 @@ module.exports.login = (req, res, next) => {
 };
 
 module.exports.register = (req, res, next) => {
-    const { email, accountType } = req.body;
+    const { email, accountType = 'user' } = req.body;
     User.findOne({ email })
         .then(user => {
             if (user) {
