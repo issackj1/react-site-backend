@@ -16,7 +16,6 @@
       ],
       "command": null,
       "linuxParameters": null,
-      "cpu": 128,
       "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
@@ -25,7 +24,6 @@
       "workingDirectory": null,
       "secrets": "",
       "dockerSecurityOptions": null,
-      "memory": 128,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
@@ -50,7 +48,6 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "",
   "taskRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
   "family": "alpha-backend",
   "pidMode": null,
@@ -58,7 +55,6 @@
     "EC2"
   ],
   "networkMode": null,
-  "cpu": "",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
