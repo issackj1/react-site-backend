@@ -11,9 +11,10 @@ const errors_mw = require('./middleware/errors');
 const auth_mw = require('./middleware/authentication');
 const routes = require('./routes/routes');
 
-const whitelist = ['http://localhost:4000/', 'http://localhost:3000/', 'http://3.94.8.68', '142.117.30.78'];
+const whitelist = ['http://localhost:4000', 'http://localhost:3000', 'http://3.94.8.68', '142.117.30.78'];
 const corsOptions = {
     origin: function (origin, callback) {
+        console.log(origin)
         if (!origin || whitelist.indexOf(origin) !== -1) {
             callback(null, true)
         } else {

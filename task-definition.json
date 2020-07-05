@@ -25,7 +25,7 @@
       "workingDirectory": null,
       "secrets": "",
       "dockerSecurityOptions": null,
-      "memory": 256,
+      "memory": 128,
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
@@ -50,41 +50,15 @@
     }
   ],
   "placementConstraints": [],
-  "memory": "256",
+  "memory": "",
   "taskRoleArn": "arn:aws:iam::815726450779:role/ecsTaskExecutionRole",
-  "compatibilities": [
-    "EC2"
-  ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:815726450779:task-definition/alpha-backend:1",
   "family": "alpha-backend",
-  "requiresAttributes": [
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.ecr-auth"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "ecs.capability.execution-role-ecr-pull"
-    }
-  ],
   "pidMode": null,
   "requiresCompatibilities": [
     "EC2"
   ],
   "networkMode": null,
   "cpu": "",
-  "revision": 1,
-  "status": "ACTIVE",
   "inferenceAccelerators": null,
   "proxyConfiguration": null,
   "volumes": []
