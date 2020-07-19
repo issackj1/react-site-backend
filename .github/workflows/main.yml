@@ -5,7 +5,8 @@ name: CI
 # Controls when the action will run
 on:
   release:
-
+    types: [created]
+    
 jobs:
 
   build:
