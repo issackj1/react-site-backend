@@ -16,38 +16,7 @@
       ],
       "command": null,
       "linuxParameters": null,
-      "environment": [{
-        "name": "CLUSTER",
-        "value": "${{ secrets.CLUSTER }}"
-      },
-        {
-          "name": "DB_NAME",
-          "value": "${{ secrets.DB_NAME }}"
-        },
-        {
-          "name": "DB_USER",
-          "value": "${{ secrets.DB_USER }}"
-        },
-        {
-          "name": "EXPRESS_SESSION_SECRET",
-          "value": "${{ secrets.EXPRESS_SESSION_SECRET }}"
-        },
-        {
-          "name": "JWT_SECRET",
-          "value": "${{ secrets.JWT_SECRET }}"
-        },
-        {
-          "name": "PROTOCOL",
-          "value": "${{ secrets.PROTOCOL }}"
-        },
-        {
-          "name": "user_key",
-          "value": "${{ secrets.USER_KEY }}"
-        },
-        {
-          "name": "USER_PWD",
-          "value": "${{ secrets.USER_PWD }}"
-        }],
+      "environment": [],
       "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
