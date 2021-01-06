@@ -22,7 +22,40 @@
       "dnsServers": null,
       "mountPoints": [],
       "workingDirectory": null,
-      "secrets": "",
+      "secrets": [
+        {
+          "name": "CLUSTER",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/CLUSTER"
+        },
+        {
+          "name": "DB_NAME",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/DB_NAME"
+        },
+        {
+          "name": "DB_USER",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/DB_USER"
+        },
+        {
+          "name": "EXPRESS_SESSION_SECRET",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/EXPRESS_SESSION_SECRET"
+        },
+        {
+          "name": "JWT_SECRET",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/JWT_SECRET"
+        },
+        {
+          "name": "PROTOCOL",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/PROTOCOL"
+        },
+        {
+          "name": "user_key",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/user_key"
+        },
+        {
+          "name": "USER_PWD",
+          "valueFrom": "arn:aws:ssm:us-east-1:815726450779:parameter/USER_PWD"
+        }
+      ],
       "dockerSecurityOptions": null,
       "memory": 128,
       "memoryReservation": null,
