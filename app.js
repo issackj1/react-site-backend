@@ -11,7 +11,7 @@ const errors_mw = require('./middleware/errors');
 const auth_mw = require('./middleware/authentication');
 const routes = require('./routes/routes');
 
-const whitelist = ['http://localhost:4000', 'http://localhost:3000', 'http://3.94.8.68', 'http://3.94.8.68/', '142.117.30.78', 'https://react-site-five.vercel.app'];
+const whitelist = ['http://localhost:4000', 'http://localhost:3000', '142.117.30.78', 'https://react-site-five.vercel.app'];
 const corsOptions = {
     origin: function (origin, callback) {
         if (!origin || whitelist.indexOf(origin) !== -1) {
