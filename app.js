@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
 const compression = require('compression');
+const helmet = require('helmet');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -26,16 +27,16 @@ const corsOptions = {
 
 const app = express();
 
-app.use(compression());
 app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser(process.env.EXPRESS_SESSION_SECRET));
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(compression());
+app.use(helmet())
 
 app.use(utility_mw.session);
-
 app.use(auth_mw.hasUserSession);
 app.use(auth_mw.attachLocals);
 

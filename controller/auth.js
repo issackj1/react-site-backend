@@ -49,6 +49,11 @@ module.exports.register = (req, res, next) => {
 };
 
 module.exports.confirmToken = (req, res, next) => {
-    const token = req.body.token;
-    res.status(200).json({ success: true });
+    const bearerHeader = req.headers['authorization'];
+    if(typeof bearerHeader !== 'undefined'){
+        req.token = bearerHeader.split(' ')[1];
+        next();
+    }else{
+        res.sendStatus(403);
+    }
 };

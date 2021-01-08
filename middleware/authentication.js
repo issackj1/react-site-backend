@@ -1,14 +1,14 @@
 const User = require('../models/user');
 
 module.exports.isAuthenticated = function (req, res, next) {
-    if (!req.session.isLoggedIn) {
-        return res.redirect('/signin');
+    if (!req.session) {
+        return res.redirect('/api/login');
     }
     next();
 };
 
 module.exports.isAlreadyLoggedIn = function (req, res, next) {
-    if (req.session.isLoggedIn) {
+    if (req.session.passport) {
         return res.redirect('/api');
     }
     next();
@@ -39,15 +39,12 @@ module.exports.isAdmin = function (req, res, next) {
 };
 
 module.exports.isUser = (req, res, next) => {
+    console.log(req.user)
     if (!req.user.role)
         return req.redirect('/403');
 
     if (req.user.role === 'user' || req.user.role === 'developer')
         return next();
-    else if (req.user.role === 'coach')
-        return res.redirect('/dashboard');
-    else if (req.user.role === 'admin')
-        return res.redirect('/admin');
     else
         res.redirect('/403');
 };
