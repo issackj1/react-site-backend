@@ -1,11 +1,11 @@
 {
-  "name": "alpha-backend",
+  "name": "athena",
   "version": "0.0.0",
-  "repository": "https://github.com/issackj1/react-site-backend",
+  "repository": "https://github.com/issackj1/athena",
   "license": "MIT",
   "scripts": {
-    "start": "node ./bin/www",
-    "start:dev": "nodemon ./bin/www"
+    "start": "node bin/www",
+    "start:dev": "nodemon bin/www"
   },
   "dependencies": {
     "axios": "^0.21.1",

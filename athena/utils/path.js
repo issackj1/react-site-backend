@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('athena/utils/path');
 
 const getRootDirectory = function () {
     const dir = __dirname.split(path.sep);

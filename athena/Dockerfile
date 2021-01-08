@@ -8,7 +8,7 @@ COPY package-lock.json ./
 
 RUN npm ci --silent --only=production
 RUN npm install
-COPY . ./
+COPY .. ./
 
 EXPOSE 4000
 CMD ["node", "./bin/www"]
