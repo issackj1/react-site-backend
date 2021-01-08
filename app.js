@@ -3,6 +3,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const compression = require('compression');
 const dotenv = require('dotenv');
 dotenv.config();
 
@@ -25,6 +26,7 @@ const corsOptions = {
 
 const app = express();
 
+app.use(compression());
 app.use(cors(corsOptions));
 app.use(logger('dev'));
 app.use(express.json());
