@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 import { TextField } from "formik-material-ui";
 import { Button, Card, CardActionArea, CardContent, Grid, Snackbar, Typography } from "@material-ui/core";
 import MuiAlert, { AlertProps } from "@material-ui/lab/Alert";
-import { Conditional } from "../Conditional";
+import { Conditional } from "../components/Conditional";
 
 interface Props {
 }

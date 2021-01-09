@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import { Box, Container } from "@material-ui/core";
 import _ from 'lodash';
-import { Conditional } from "../Conditional";
+import { Conditional } from "./Conditional";
 
 type Props = {};
 

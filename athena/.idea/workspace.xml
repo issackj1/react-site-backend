@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1eeac61-2282-42f8-8d18-a99374db1cf0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../athena-ui/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../athena-ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/AthenaNavBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/AthenaNavBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/Conditional.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/Conditional.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/TableDetail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/TableDetail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/forms/GetCubeMetaData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/forms/GetCubeMetaData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/sharedFunctions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/Copyright.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,11 +31,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../athena-ui/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../athena-ui/src/components" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.start-athena-ui">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -95,7 +112,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610160589715</updated>
-      <workItem from="1610160590758" duration="1696000" />
+      <workItem from="1610160590758" duration="2188000" />
+      <workItem from="1610221703636" duration="418000" />
     </task>
     <servers />
   </component>
@@ -107,25 +125,29 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161393150" />
-    <state width="2539" height="424" key="GridCell.Tab.0.bottom" timestamp="1610162181681">
+    <state width="1253" height="424" key="GridCell.Tab.0.bottom" timestamp="1610222083927">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610162181681" />
+    <state width="1253" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222083927" />
     <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610161576935" />
-    <state width="2539" height="424" key="GridCell.Tab.0.center" timestamp="1610162181679">
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620612" />
+    <state width="1253" height="424" key="GridCell.Tab.0.center" timestamp="1610222083924">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610162181679" />
+    <state width="1253" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222083924" />
     <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610161576934" />
-    <state width="2539" height="424" key="GridCell.Tab.0.left" timestamp="1610162181679">
+    <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
+    <state width="1253" height="424" key="GridCell.Tab.0.left" timestamp="1610222083923">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610162181679" />
+    <state width="1253" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222083923" />
     <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610161576933" />
-    <state width="2539" height="424" key="GridCell.Tab.0.right" timestamp="1610162181680">
+    <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
+    <state width="1253" height="424" key="GridCell.Tab.0.right" timestamp="1610222083926">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610162181680" />
+    <state width="1253" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222083926" />
     <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610161576934" />
+    <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
   </component>
 </project>
