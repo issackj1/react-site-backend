@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 const app = require('../app');
-const debug = require('debug')('alpha-backend:server');
+const debug = require('debug')('athena:server');
 const http = require('http');
 const mongoose = require('mongoose');
 const database = require("../utils/database");

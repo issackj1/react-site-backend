@@ -39,7 +39,6 @@ module.exports.isAdmin = function (req, res, next) {
 };
 
 module.exports.isUser = (req, res, next) => {
-    console.log(req.user)
     if (!req.user.role)
         return req.redirect('/403');
 
