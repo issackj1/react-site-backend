@@ -3,30 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="d1eeac61-2282-42f8-8d18-a99374db1cf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../athena-ui/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/css/2.86a5f087.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/css/2.86a5f087.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/2.e5b60f9c.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/2.e5b60f9c.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/2.e5b60f9c.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/main.94af7348.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/main.94af7348.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/runtime-main.7f32c003.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/js/runtime-main.7f32c003.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-all-400-normal.b5a0a0df.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-cyrillic-400-normal.3605d18d.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-cyrillic-ext-400-normal.dd55ea0a.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-greek-400-normal.352cc77a.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-greek-ext-400-normal.bc7ace6e.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-latin-400-normal.176f8f5b.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-latin-ext-400-normal.dcc07bcf.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/build/static/media/roboto-vietnamese-400-normal.52cebac0.woff2" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../athena-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../athena-ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/Athena.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/Auth.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/css/main.8c8b27cf.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/css/main.8c8b27cf.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/2.e82139d5.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/2.e82139d5.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/2.e82139d5.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/3.e14845c1.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/3.e14845c1.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/main.ac0fc836.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/main.ac0fc836.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/runtime-main.38532241.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/js/runtime-main.38532241.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/static/media/logo.6ce24c58.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/PrivateRoute.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/PrivateRoute.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +62,17 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="start-athena-ui" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/../athena-ui/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start-athena" type="js.build_tools.npm" temporary="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -83,11 +92,18 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.start-athena" />
+      <item itemvalue="npm.start-athena-ui" />
+      <item itemvalue="npm.start:dev" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start:dev" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start-athena-ui" />
+        <item itemvalue="npm.start-athena" />
       </list>
     </recent_temporary>
   </component>
@@ -99,7 +115,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610160589715</updated>
-      <workItem from="1610160590758" duration="471000" />
+      <workItem from="1610160590758" duration="980000" />
     </task>
     <servers />
   </component>
@@ -107,21 +123,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2539" height="424" key="GridCell.Tab.0.bottom" timestamp="1610160883304">
+    <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1610161393150">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610160883304" />
-    <state width="2539" height="424" key="GridCell.Tab.0.center" timestamp="1610160883303">
+    <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161393150" />
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom" timestamp="1610161335727">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610160883303" />
-    <state width="2539" height="424" key="GridCell.Tab.0.left" timestamp="1610160883300">
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161335727" />
+    <state width="2539" height="424" key="GridCell.Tab.0.center" timestamp="1610161335726">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610160883298" />
-    <state width="2539" height="424" key="GridCell.Tab.0.right" timestamp="1610160883303">
+    <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161335726" />
+    <state width="2539" height="424" key="GridCell.Tab.0.left" timestamp="1610161335724">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610160883303" />
+    <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161335724" />
+    <state width="2539" height="424" key="GridCell.Tab.0.right" timestamp="1610161335726">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161335726" />
   </component>
 </project>

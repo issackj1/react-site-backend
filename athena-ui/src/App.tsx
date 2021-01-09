@@ -12,15 +12,15 @@ export default function App() {
 
 	const handleLogout = () => {
 		localStorage.removeItem('my-jwt');
-		history.push("/athena");
+		history.push("/");
 	}
 
 	return (
 		<Router basename={ process.env.PUBLIC_URL }>
 			<Switch>
-				<Route path={ "/athena/auth" } component={ Auth }/>
+				<Route path={ "/auth" } component={ Auth }/>
 				<PrivateRoute handleLogout={ handleLogout }
-				              path={ "/athena/:name/detail/:productId" } component={ TableDetail }/>
+				              path={ "/:name/detail/:productId" } component={ TableDetail }/>
 				<PrivateRoute handleLogout={ handleLogout } path={ "/athena/:name" }
 				              component={ Endpoint }/>
 				<PrivateRoute handleLogout={ handleLogout } path={ "/" } component={ Welcome }/>
