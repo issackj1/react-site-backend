@@ -37,7 +37,7 @@ export const AthenaNavBar: React.FC<Props> = (props) => {
 						</Link>
 					</Typography>
 					{
-						history.location.pathname !== "/athena/auth"
+						history.location.pathname !== "/auth"
 							? (<Button variant="contained" color="primary"
 								        startIcon={ <SvgIcon component={ ExitToApp }/> } onClick={ handleLogout }>
 									Logout
