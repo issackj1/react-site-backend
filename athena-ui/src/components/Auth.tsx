@@ -5,7 +5,7 @@ import { LoginForm } from "../forms/LoginForm";
 import { SignUpForm } from "../forms/SignUpForm";
 import { useHistory } from "react-router-dom";
 import { Box, Card, CardContent, CardHeader, Container, Grid, Snackbar } from "@material-ui/core";
-import {Copyright} from "../../sharedFunctions";
+import {Copyright} from "../sharedFunctions";
 
 const axios = require('axios');
 
