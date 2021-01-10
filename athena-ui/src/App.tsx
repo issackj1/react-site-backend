@@ -5,12 +5,22 @@ import { PrivateRoute } from "./components/PrivateRoute";
 import { TableDetail } from "./components/TableDetail";
 import { Endpoint } from "./components/Endpoint";
 import { Welcome } from "./components/Welcome";
-import { Grid } from "@material-ui/core";
+import { Box, Container, Grid, makeStyles } from "@material-ui/core";
 import { AthenaNavBar } from "./components/AthenaNavBar";
+import { Copyright } from "./components/Copyright";
 
+const useStyles = makeStyles((theme) => ({
+	paper: {
+		marginTop: theme.spacing(8),
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+	}
+}));
 
 export default function App() {
 	const history = useHistory();
+	const classes = useStyles();
 
 	const handleLogout = () => {
 		localStorage.removeItem('my-jwt');
@@ -18,20 +28,27 @@ export default function App() {
 	}
 
 	return (
-		<Grid>
-			<Router basename={ process.env.PUBLIC_URL }>
-				<Grid item xs={ 12 } sm={ 12 }>
-					<AthenaNavBar handleLogout={ handleLogout }/>
+		<Container component="main">
+			<div className={classes.paper}>
+				<Grid>
+					<Router basename={ process.env.PUBLIC_URL }>
+						<Grid item xs={ 12 } sm={ 12 }>
+							<AthenaNavBar handleLogout={ handleLogout }/>
+						</Grid>
+						<Switch>
+							<Route path={ "/auth" } component={ Auth }/>
+							<PrivateRoute handleLogout={ handleLogout }
+							              path={ "/:name/detail/:productId" } component={ TableDetail }/>
+							<PrivateRoute handleLogout={ handleLogout } path={ "/athena/:name" }
+							              component={ Endpoint }/>
+							<PrivateRoute handleLogout={ handleLogout } path={ "/" } component={ Welcome }/>
+						</Switch>
+					</Router>
 				</Grid>
-				<Switch>
-					<Route path={ "/auth" } component={ Auth }/>
-					<PrivateRoute handleLogout={ handleLogout }
-					              path={ "/:name/detail/:productId" } component={ TableDetail }/>
-					<PrivateRoute handleLogout={ handleLogout } path={ "/athena/:name" }
-					              component={ Endpoint }/>
-					<PrivateRoute handleLogout={ handleLogout } path={ "/" } component={ Welcome }/>
-				</Switch>
-			</Router>
-		</Grid>
+			</div>
+			<Box mt={8}>
+				<Copyright />
+			</Box>
+		</Container>
 	);
 };

@@ -5,7 +5,6 @@ import { LoginForm } from "../forms/LoginForm";
 import { SignUpForm } from "../forms/SignUpForm";
 import { useHistory } from "react-router-dom";
 import { Box, Card, CardContent, CardHeader, Container, Grid, Snackbar } from "@material-ui/core";
-import { Copyright } from "./Copyright";
 
 const axios = require('axios');
 
@@ -124,7 +123,6 @@ export const Auth: React.FC<Props> = () => {
 									: logInHeaders()
 							}
 						</Card>
-						{ Copyright() }
 					</Grid>
 				</Grid>
 			</Box>

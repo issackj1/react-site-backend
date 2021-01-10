@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d1eeac61-2282-42f8-8d18-a99374db1cf0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../athena-ui/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../athena-ui/src/components/Auth.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/components/Auth.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/forms/LoginForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/forms/LoginForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/forms/SignUpForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/forms/SignUpForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../athena-ui/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../athena-ui/src/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,8 +94,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start-athena-ui" />
         <item itemvalue="npm.start:dev" />
+        <item itemvalue="npm.start-athena-ui" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.start-athena" />
       </list>
@@ -107,6 +111,7 @@
       <updated>1610160589715</updated>
       <workItem from="1610160590758" duration="2188000" />
       <workItem from="1610221703636" duration="695000" />
+      <workItem from="1610253138912" duration="730000" />
     </task>
     <servers />
   </component>
@@ -118,29 +123,37 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="744" y="379" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610161393150" />
-    <state width="2539" height="424" key="GridCell.Tab.0.bottom" timestamp="1610222404849">
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom" timestamp="1610253502784">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1253" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222325246" />
+    <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253502784" />
     <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610222404849" />
     <state width="2539" height="424" key="GridCell.Tab.0.bottom/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620612" />
-    <state width="2539" height="424" key="GridCell.Tab.0.center" timestamp="1610222404847">
+    <state width="2539" height="424" key="GridCell.Tab.0.center" timestamp="1610253502782">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1253" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222325245" />
+    <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253502782" />
     <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610222404847" />
     <state width="2539" height="424" key="GridCell.Tab.0.center/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
-    <state width="2539" height="424" key="GridCell.Tab.0.left" timestamp="1610222404847">
+    <state width="2539" height="424" key="GridCell.Tab.0.left" timestamp="1610253502781">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1253" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222325244" />
+    <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253502781" />
     <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610222404847" />
     <state width="2539" height="424" key="GridCell.Tab.0.left/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
-    <state width="2539" height="424" key="GridCell.Tab.0.right" timestamp="1610222404848">
+    <state width="2539" height="424" key="GridCell.Tab.0.right" timestamp="1610253502783">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state width="1253" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610222325245" />
+    <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253502783" />
     <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.565.1440.875/0.0.2560.1440@0.0.2560.1440" timestamp="1610222404848" />
     <state width="2539" height="424" key="GridCell.Tab.0.right/-1440.565.1440.875/0.25.2560.1323@0.25.2560.1323" timestamp="1610221620611" />
+    <state x="979" y="475" width="602" height="490" key="find.popup" timestamp="1610253868916">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="979" y="475" width="602" height="490" key="find.popup/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253868916" />
+    <state x="945" y="331" key="search.everywhere.popup" timestamp="1610253709193">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="945" y="331" key="search.everywhere.popup/-1440.540.1440.900/0.0.2560.1440@0.0.2560.1440" timestamp="1610253709193" />
   </component>
 </project>
