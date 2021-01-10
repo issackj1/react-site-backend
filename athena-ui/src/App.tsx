@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Auth } from "./components/Auth";
 import { PrivateRoute } from "./components/PrivateRoute";
 import { TableDetail } from "./components/TableDetail";
@@ -19,35 +19,27 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function App() {
-	const history = useHistory();
 	const classes = useStyles();
-
-	const handleLogout = () => {
-		localStorage.removeItem('my-jwt');
-		history.push("/");
-	}
 
 	return (
 		<Container component="main">
-			<div className={classes.paper}>
+			<div className={ classes.paper }>
 				<Grid>
 					<Router basename={ process.env.PUBLIC_URL }>
-						<Grid item xs={ 12 } sm={ 12 }>
-							<AthenaNavBar handleLogout={ handleLogout }/>
+						<Grid item>
+							<AthenaNavBar/>
 						</Grid>
 						<Switch>
 							<Route path={ "/auth" } component={ Auth }/>
-							<PrivateRoute handleLogout={ handleLogout }
-							              path={ "/:name/detail/:productId" } component={ TableDetail }/>
-							<PrivateRoute handleLogout={ handleLogout } path={ "/athena/:name" }
-							              component={ Endpoint }/>
-							<PrivateRoute handleLogout={ handleLogout } path={ "/" } component={ Welcome }/>
+							<PrivateRoute path={ "/:name/detail/:productId" } component={ TableDetail }/>
+							<PrivateRoute path={ "/athena/:name" } component={ Endpoint }/>
+							<PrivateRoute path={ "/" } component={ Welcome }/>
 						</Switch>
 					</Router>
 				</Grid>
 			</div>
-			<Box mt={8}>
-				<Copyright />
+			<Box mt={ 8 }>
+				<Copyright/>
 			</Box>
 		</Container>
 	);

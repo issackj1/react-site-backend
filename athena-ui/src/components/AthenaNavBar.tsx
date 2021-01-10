@@ -5,7 +5,6 @@ import { useHistory } from "react-router-dom";
 import { ExitToApp } from "@material-ui/icons";
 
 interface Props {
-	handleLogout: () => void;
 }
 
 const useStyles = makeStyles((theme) => ({
@@ -22,10 +21,14 @@ const useStyles = makeStyles((theme) => ({
 	},
 }));
 
-export const AthenaNavBar: React.FC<Props> = (props) => {
+export const AthenaNavBar: React.FC<Props> = () => {
 	const classes = useStyles();
 	const history = useHistory();
-	const { handleLogout } = props;
+
+	const handleLogout = () => {
+		localStorage.removeItem('my-jwt');
+		history.push("/");
+	}
 
 	return (
 		<div className={ classes.root }>

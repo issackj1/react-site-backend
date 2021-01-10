@@ -26,7 +26,7 @@ export const Auth: React.FC<Props> = () => {
 
 	useEffect(() => {
 		if (authenticated) {
-			history.push("/athena")
+			history.push("/")
 		}
 	}, [authenticated, history])
 
@@ -38,7 +38,7 @@ export const Auth: React.FC<Props> = () => {
 			})
 			.then((result: any) => {
 					localStorage.setItem('my-jwt', result.data.token);
-					history.push('/athena')
+					history.push('/')
 				},
 				(error: any) => {
 					setToastMessage("Incorrect email or password");
@@ -56,7 +56,7 @@ export const Auth: React.FC<Props> = () => {
 			})
 			.then((result: any) => {
 					localStorage.setItem('my-jwt', result.data.token);
-					history.push('/athena')
+					history.push('/')
 				},
 				(error: any) => {
 					setToastMessage("Email is already in use");
